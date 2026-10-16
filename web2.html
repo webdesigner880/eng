@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        New Web
+    </title>
+    <style>
+         .center{text-align: center;}
+         .font {font: 1em sans-serif;;}
+         .new {}
+         .hidden {background-color: rgb(0, 255, 0);
+        display: none;}
+        body {background-color: rgb(255, 0, 0);}
+         
+        
+    </style>
+</head>
+<body>
+    <div class="center font cs new" style="background-color: black; color: red;">
+        <h1>From web programing to cybersecurity</h1>
+    </div>
+    <div class="center font cs new" sty>
+        <img src="img.jpeg" alt="" width="500"> 
+        <img src="img.jpeg" alt="" width="500"> 
+        <img src="img.jpeg" alt="" width="500"> 
+    </div>
+    <div class="center font">
+        <h2>To show more info click on the following button:</h2>  
+        <button id="show">more info</button>
+    </div>
+    <div id="info" class=" center font hidden">
+        <h1>This is page has been made with html language as start of programing
+            by eng/fahd khalil
+        </h1>
+    </div>
+    <script>
+        const button = document.getElementById("show");
+const info = document.getElementById("info");
+
+button.addEventListener("click", function () {
+    info.classList.toggle("hidden");
+});
+    </script>
+    
+</body>
+</html>
